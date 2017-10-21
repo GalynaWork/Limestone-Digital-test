@@ -9,9 +9,8 @@
 
     <link rel="stylesheet" type="text/css" href="css/slick.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" href="css/jquery.fancybox.css">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,900" rel="stylesheet">
 </head>
 
 <body>
@@ -47,7 +46,7 @@
         <div class="call_login">
             <a href="tel:1‑844‑896‑6462">
                 <i class="fa fa-phone-square" aria-hidden="true"></i>
-                <span> Call to order 1‑844‑896‑6462</span>
+                <span class="call_order"> Call to order</span><span> 1‑844‑896‑6462</span>
             </a>
             <span class="line"> | </span>
             <a href="#" class="login">login</a>
@@ -56,6 +55,13 @@
                 <div class="basket_count"><span>0</span></div>
             </div>
         </div>
+        <div class="mobile_call">
+            <a href="tel:1‑844‑896‑6462">
+                <i class="fa fa-phone-square" aria-hidden="true"></i>
+
+            </a>
+        </div>
+
     </div>
 </header>
 <!--end header-->
@@ -65,14 +71,15 @@
 
     <div class="item_description">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-xs-5 col-sm-4">
                 <div class="container slider">
                     <div class="clinically_proven">
-                        <img src="images/clinically%20proven.png" alt="clinically proven" title="clinically proven"/>
+                        <img src="images/clinically-proven.png" alt="clinically proven" title="clinically proven"/>
 
                     </div>
-                    <div class="slider_zoom">
-                        <img id="slider_zoom" src="images/zoom.png" alt="zoom" title="zoom"/>
+                    <div class="slider_zoom" id="slider_zoom">
+                        <img src="images/zoom.png" alt="zoom" title="zoom"/>
+                        <span class="zoom_text">View More Images</span>
 
                     </div>
 
@@ -91,9 +98,9 @@
                                         </div>
 
                                         <a class="carousel-control left" href="#modal-carousel" data-slide="prev"><i
-                                                class="glyphicon glyphicon-chevron-left"></i></a>
+                                                class="fa fa-chevron-left" aria-hidden="true"></i></a>
                                         <a class="carousel-control right" href="#modal-carousel" data-slide="next"><i
-                                                class="glyphicon glyphicon-chevron-right"></i></a>
+                                                class="fa fa-chevron-right" aria-hidden="true"></i></a>
 
                                     </div>
                                 </div>
@@ -103,60 +110,60 @@
                     </div>
 
 
-                <div class="gallery">
-                    <div class="full">
-                        <!-- first image is viewable to start -->
-                        <img src="images/footer_product.png"/>
+                    <div class="gallery">
+                        <div class="full">
+                            <!-- first image is viewable to start -->
+                            <img src="images/footer_product.png"/>
+                        </div>
+                        <div class="previews">
+                            <div class="item"><a id="image0" href="#" class="selected"
+                                                 data-full="images/footer_product.png"><img
+                                    src="images/footer_product.png"/></a></div>
+
+                            <div class="item"><a id="image1" href="#" data-full="images/slider_product_2.png"><img
+                                    src="images/slider_product_2.png"/></a></div>
+
+                        </div>
+
+
                     </div>
-                    <div class="previews">
-                        <div class="item"><a id="image0" href="#" class="selected"
-                                             data-full="images/footer_product.png"><img
-                                src="images/footer_product.png"/></a></div>
+                </div>
 
-                        <div class="item"><a id="image1" href="#" data-full="images/slider_product_2.png"><img
-                                src="images/slider_product_2.png"/></a></div>
-
+            </div>
+            <div class="right_side_description col-sm-8 col-xs-7">
+                <h1>Advanced Therapy System</h1>
+                <div class="product_stars">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    <a href="#" title="Reviews" class="reviews">8709 Reviews</a>
+                </div>
+                <ul>
+                    <li>17 Key ACTIVE ingedients</li>
+                    <li>Revives damaged and distressed hair</li>
+                    <li>Supports healthy scalp, regenerates hair, and revitalizes follicles</li>
+                    <li>Adds body, increases volume, and thickens hair</li>
+                </ul>
+                <div>
+                    <p class="new_price">$39.99</p>
+                    <div class="show_old_price">
+                        <p class="old_price">Reg. <span>$59.99</span></p>
+                        <p class="saving">33% Savings!</p>
                     </div>
-
-
+                    <button type="button" id="add_productBtn" class="add_productBtn">Add to cart</button>
                 </div>
             </div>
-
         </div>
-        <div class="right_side_description col-md-8">
-            <h1>Advanced Therapy System</h1>
-            <div class="product_stars">
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star-half-o" aria-hidden="true"></i>
-                <a href="#" title="Reviews" class="reviews">8709 Reviews</a>
-            </div>
-            <ul>
-                <li>17 Key ACTIVE ingedients</li>
-                <li>Revives damaged and distressed hair</li>
-                <li>Supports healthy scalp, regenerates hair, and revitalizes follicles</li>
-                <li>Adds body, increases volume, and thickens hair</li>
-            </ul>
-            <div>
-                <p class="new_price">$39.99</p>
-                <div class="show_old_price">
-                    <p class="old_price">Reg. <span>$59.99</span></p>
-                    <p class="saving">33% Savings!</p>
-                </div>
-                <button type="button" id="add_productBtn" class="add_productBtn">Add to cart</button>
-            </div>
-        </div>
-    </div>
     </div>
 </section>
 <!--end product description-->
 <!--other hair kits-->
-<section class="other_hair_kits">
+<section class="other_hair_kits container-fluid">
     <h2>Other Hair Kits</h2>
     <div class="row">
-        <div class="col-sm-6">
+        <div class="col-sm-6 col-xs-12 left_side">
             <div class="first_hair_kits">
                 <a href="#" title="The Blue Kit">
 
@@ -183,7 +190,7 @@
                 </a>
             </div>
         </div>
-        <div class="col-sm-6 ">
+        <div class="col-sm-6 col-xs-12">
             <div class="second_hair_kits">
                 <a href="#" title="The Pro Kit">
 
@@ -216,8 +223,8 @@
 
 </section>
 <!--end other hair kits-->
-<section class="advantage_statistics">
-    <div class="row">
+<section class="advantage_statistics container-fluid">
+    <div>
         <h2>After using for 2 Minutes at a time, percent experienced improvement of the following to their hair:</h2>
         <div class="col-sm-6 statistics_left_side">
             <div class="statistics_item">
@@ -307,7 +314,7 @@
         conditioner.</p>
     </div>
 </section>
-<section class="video_part">
+<section class="video_part container-fluid">
     <div class="row">
         <div class="col-sm-6">
             <div class="left_video">
@@ -326,7 +333,7 @@
     </div>
 
 </section>
-<section class="three_steps">
+<section class="three_steps container-fluid">
     <div class="row">
         <div class="col-sm-4 step1">
             <img src="images/first_step.png" alt="first step" title="first step">
@@ -350,7 +357,7 @@
         <span>daily</span>. Visible results after 3 month. Continue use thereafter.</p>
 
 </section>
-<section class="our_promise">
+<section class="our_promise container-fluid">
     <div class="row promise">
 
         <p class="promise_text">Every product we offer delivers premium solutions while keeping the earth in mind. Our
@@ -398,12 +405,13 @@
 <footer>
     <div class="footer">
         <img src="images/footer_product.png" alt="Advanced Therapy System" title="Advanced Therapy System"/>
-        <div><h3>Advanced Therapy System</h3>
+        <div class="text_about_product">
+            <h3>Advanced Therapy System</h3>
             <div><p class="new_price">$29.99</p>
-                <p class="additional_text"><< 33% Savings + additional $10 OFF Price!</p>
+                <p class="additional_text"><< 33% Savings <span>+ additional $10 OFF Price!</span></p>
             </div>
         </div>
-        <button type="button">Add to cart</button>
+        <button id="footer_btn" type="button" class="footer_btn">Add to cart</button>
     </div>
 </footer>
 <!--footer-->
@@ -412,76 +420,8 @@
 <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="js/slick.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
 
 
-<script type="text/javascript">
-
-    $(document).ready(function () {
-
-        $('.previews a').click(function () {
-            var largeImage = $(this).attr('data-full');
-            var largeImage1 = $(this).attr('id');
-            console.log(largeImage1);
-            $('.selected').removeClass();
-            $(this).addClass('selected');
-            $('.full img').hide();
-            $('.full img').attr('src', largeImage);
-            $('.full img').attr('id', largeImage1);
-            $('.full img').fadeIn();
-        });
-
-
-    });
-
-
-    $(document).ready(function () {
-
-
-        /* popup */
-        $(".full img").click(function () {
-
-            var slide_number = $(this).attr("id");
-            if (slide_number == undefined)
-                slide_number = 0;
-            else
-                slide_number = slide_number.replace("image", "");
-            var content = $(".carousel-inner");
-            var title = $(".modal-title");
-            content.empty();
-            title.empty();
-            var id = this.id;
-            var repo = $(".previews .item").clone();
-            console.log(repo);
-            var active = repo.eq(slide_number);
-            active.addClass("active");
-            title.html(active.find("img").attr("title"));
-            content.append(repo);
-            // show the modal
-            $("#modal-gallery").modal("show");
-        });
-        $("#slider_zoom").click(function () {
-            var slide_number = $(".full img").attr("id");
-            if (slide_number == undefined)
-                slide_number = 0;
-            else
-                slide_number = slide_number.replace("image", "");
-            var content = $(".carousel-inner");
-            var title = $(".modal-title");
-            content.empty();
-            title.empty();
-            var id = this.id;
-            var repo = $(".previews .item").clone();
-            console.log(repo);
-            var active = repo.eq(slide_number);
-            active.addClass("active");
-            title.html(active.find("img").attr("title"));
-            content.append(repo);
-            // show the modal
-            $("#modal-gallery").modal("show");
-        });
-
-
-    });
-</script>
 </body>
 </html>

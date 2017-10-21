@@ -4980,6 +4980,10 @@ button.close {
   cursor: pointer;
   background: transparent;
   border: 0;
+  color: #000;
+  opacity: 1;
+  outline: none;
+  font-size: 2.4em
 }
 .modal-open {
   overflow: hidden;
@@ -4990,6 +4994,8 @@ button.close {
   right: 0;
   bottom: 0;
   left: 0;
+  height: 100vh;
+  width: 100vw;
   z-index: 1050;
   display: none;
   overflow: hidden;
@@ -5051,7 +5057,8 @@ button.close {
 }
 .modal-header {
   padding: 15px;
-  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 0;
+  padding-top: 6px;
 }
 .modal-header .close {
   margin-top: -2px;
