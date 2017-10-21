@@ -76,33 +76,32 @@ body {
     -moz-box-shadow: inset 1px 1px 2px 0 rgba(0, 0, 0, 0.5);
     box-shadow: inset 1px 1px 2px 0 rgba(0, 0, 0, 0.5);
     border: 1px solid rgba(0, 0, 0, 0.5);
-    padding: 0 10px;
+    padding: 0 15px;
     width: 320px;
     margin-right: 5px;
-    height: 30px; }
+    height: 30px;
+    color: #7b858e;
+    font-family: "Futura-Book", sans-serif;
+    font-size: 1.4em; }
     .special-offer input::-webkit-input-placeholder {
       color: #7b858e;
       text-align: center;
       font-family: "Futura-Book", sans-serif;
-      font-size: 1.3em;
       height: 30px; }
     .special-offer input::-moz-placeholder {
       color: #7b858e;
       text-align: center;
       font-family: "Futura-Book", sans-serif;
-      font-size: 1.3em;
       height: 30px; }
     .special-offer input:-ms-input-placeholder {
       color: #7b858e;
       text-align: center;
       font-family: "Futura-Book", sans-serif;
-      font-size: 1.3em;
       height: 30px; }
     .special-offer input:-moz-placeholder {
       color: #7b858e;
       text-align: center;
       font-family: "Futura-Book", sans-serif;
-      font-size: 1.3em;
       height: 30px; }
 
 #emailBtn {
@@ -275,11 +274,48 @@ header {
   left: 5px;
   z-index: 1; }
 
-.slider_zoom {
+#slider_zoom {
   position: absolute;
-  bottom: 70px;
+  bottom: 82px;
   left: 43px;
   cursor: pointer; }
+
+.gallery .previews, .gallery .full, .gallery .desc {
+  margin-right: 10px; }
+
+.gallery .desc, .gallery .full {
+  font-size: 12px; }
+
+.gallery .desc h2 {
+  margin-top: 0; }
+
+.gallery .previews a {
+  display: block;
+  margin-bottom: 10px;
+  margin-right: 10px; }
+
+.gallery .previews a:hover, .gallery .previews a.selected {
+  border: 1px solid #000; }
+
+.gallery .full img:hover {
+  cursor: pointer; }
+
+.full img {
+  width: 195px;
+  height: 247px; }
+
+.previews {
+  display: flex;
+  display: -webkit-flex;
+  margin-top: 23px;
+  margin-left: 11px; }
+  .previews a {
+    border: 1px solid #fff;
+    transition: 450ms ease 0s; }
+  .previews img {
+    width: 41px;
+    height: 53px;
+    margin: 3px; }
 
 /*end slider product description */
 /*product description */
@@ -592,6 +628,8 @@ header {
 .our_promise {
   padding-top: 23px;
   padding-bottom: 74px; }
+  .our_promise .left_side {
+    margin-right: 45px; }
 
 .promise .promise_text {
   padding-left: 24px;

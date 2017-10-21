@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" type="text/css" href="css/slick.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900" rel="stylesheet">
 </head>
@@ -74,32 +75,7 @@
                         <img id="slider_zoom" src="images/zoom.png" alt="zoom" title="zoom"/>
 
                     </div>
-                    <div class="slider-for">
-                        <div class="item">
-                            <img class="thumbnail img-responsive" id="image0"
-                                 src="images/footer_product.png"
-                                 alt="Advanced Therapy System" draggable="false"/>
-                        </div>
-                        <div class="item">
-                            <img class="thumbnail img-responsive" id="image1"
-                                 src="images/slider_product_2.png"
-                                 alt="Advanced Therapy System" draggable="false"/>
-                        </div>
 
-                    </div>
-
-                    <div class="slider-nav" id="img-repo">
-                        <div class="item">
-                            <img src="images/footer_product.png"
-                                 alt="Advanced Therapy System" draggable="false"/>
-                        </div>
-                        <div class="item">
-                            <img src="images/slider_product_2.png"
-                                 alt="Advanced Therapy System" draggable="false"/>
-                        </div>
-
-
-                    </div>
 
                     <div class="modal" id="modal-gallery" role="dialog">
                         <div class="modal-dialog">
@@ -115,9 +91,9 @@
                                         </div>
 
                                         <a class="carousel-control left" href="#modal-carousel" data-slide="prev"><i
-                                                class=""></i></a>
+                                                class="glyphicon glyphicon-chevron-left"></i></a>
                                         <a class="carousel-control right" href="#modal-carousel" data-slide="next"><i
-                                                class=""></i></a>
+                                                class="glyphicon glyphicon-chevron-right"></i></a>
 
                                     </div>
                                 </div>
@@ -125,34 +101,54 @@
                             </div>
                         </div>
                     </div>
+
+
+                <div class="gallery">
+                    <div class="full">
+                        <!-- first image is viewable to start -->
+                        <img src="images/footer_product.png"/>
+                    </div>
+                    <div class="previews">
+                        <div class="item"><a id="image0" href="#" class="selected"
+                                             data-full="images/footer_product.png"><img
+                                src="images/footer_product.png"/></a></div>
+
+                        <div class="item"><a id="image1" href="#" data-full="images/slider_product_2.png"><img
+                                src="images/slider_product_2.png"/></a></div>
+
+                    </div>
+
+
                 </div>
             </div>
-            <div class="right_side_description col-md-8">
-                <h1>Advanced Therapy System</h1>
-                <div class="product_stars">
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
-                    <a href="#" title="Reviews" class="reviews">8709 Reviews</a>
+
+        </div>
+        <div class="right_side_description col-md-8">
+            <h1>Advanced Therapy System</h1>
+            <div class="product_stars">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                <a href="#" title="Reviews" class="reviews">8709 Reviews</a>
+            </div>
+            <ul>
+                <li>17 Key ACTIVE ingedients</li>
+                <li>Revives damaged and distressed hair</li>
+                <li>Supports healthy scalp, regenerates hair, and revitalizes follicles</li>
+                <li>Adds body, increases volume, and thickens hair</li>
+            </ul>
+            <div>
+                <p class="new_price">$39.99</p>
+                <div class="show_old_price">
+                    <p class="old_price">Reg. <span>$59.99</span></p>
+                    <p class="saving">33% Savings!</p>
                 </div>
-                <ul>
-                    <li>17 Key ACTIVE ingedients</li>
-                    <li>Revives damaged and distressed hair</li>
-                    <li>Supports healthy scalp, regenerates hair, and revitalizes follicles</li>
-                    <li>Adds body, increases volume, and thickens hair</li>
-                </ul>
-                <div>
-                    <p class="new_price">$39.99</p>
-                    <div class="show_old_price">
-                        <p class="old_price">Reg. <span>$59.99</span></p>
-                        <p class="saving">33% Savings!</p>
-                    </div>
-                    <button type="button" id="add_productBtn" class="add_productBtn">Add to cart</button>
-                </div>
+                <button type="button" id="add_productBtn" class="add_productBtn">Add to cart</button>
             </div>
         </div>
+    </div>
     </div>
 </section>
 <!--end product description-->
@@ -361,7 +357,7 @@
             goal is to be your
             trusted
             source for healthy and safe beauty solutions.</p>
-        <div class="col-sm-6">
+        <div class="col-sm-5 left_side">
             <ul>
                 <li><img src="images/no_harmful_chemicals.png" title="No harmful chemicals" alt="No harmful chemicals"/>
                     <p>No harmful chemicals</p>
@@ -405,49 +401,56 @@
         <div><h3>Advanced Therapy System</h3>
             <div><p class="new_price">$29.99</p>
                 <p class="additional_text"><< 33% Savings + additional $10 OFF Price!</p>
-                </div>
+            </div>
         </div>
         <button type="button">Add to cart</button>
     </div>
 </footer>
 <!--footer-->
 
+
 <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="js/slick.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
+
 <script type="text/javascript">
+
     $(document).ready(function () {
 
-        $('.slider-for').slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: false,
-            fade: false,
-            asNavFor: '.slider-nav',
-            autoplay: false
+        $('.previews a').click(function () {
+            var largeImage = $(this).attr('data-full');
+            var largeImage1 = $(this).attr('id');
+            console.log(largeImage1);
+            $('.selected').removeClass();
+            $(this).addClass('selected');
+            $('.full img').hide();
+            $('.full img').attr('src', largeImage);
+            $('.full img').attr('id', largeImage1);
+            $('.full img').fadeIn();
         });
-        $('.slider-nav').slick({
-            slidesToShow: 2,
-            slidesToScroll: 1,
-            asNavFor: '.slider-for',
-            dots: false,
-            centerMode: false,
-            focusOnSelect: true,
-            infinite: true,
-            variableWidth: true,
-            centerPadding: '0px'
-        });
+
+
+    });
+
+
+    $(document).ready(function () {
+
+
         /* popup */
-        $(".row .thumbnail").click(function () {
+        $(".full img").click(function () {
+
             var slide_number = $(this).attr("id");
-            slide_number = slide_number.replace("image", "");
+            if (slide_number == undefined)
+                slide_number = 0;
+            else
+                slide_number = slide_number.replace("image", "");
             var content = $(".carousel-inner");
             var title = $(".modal-title");
             content.empty();
             title.empty();
             var id = this.id;
-            var repo = $("#img-repo .item").clone();
+            var repo = $(".previews .item").clone();
             console.log(repo);
             var active = repo.eq(slide_number);
             active.addClass("active");
@@ -457,14 +460,17 @@
             $("#modal-gallery").modal("show");
         });
         $("#slider_zoom").click(function () {
-            var slide_number = $(".row .thumbnail").attr("id");
-            slide_number = slide_number.replace("image", "");
+            var slide_number = $(".full img").attr("id");
+            if (slide_number == undefined)
+                slide_number = 0;
+            else
+                slide_number = slide_number.replace("image", "");
             var content = $(".carousel-inner");
             var title = $(".modal-title");
             content.empty();
             title.empty();
             var id = this.id;
-            var repo = $("#img-repo .item").clone();
+            var repo = $(".previews .item").clone();
             console.log(repo);
             var active = repo.eq(slide_number);
             active.addClass("active");
@@ -474,11 +480,7 @@
             $("#modal-gallery").modal("show");
         });
 
-        $(" .slider-nav .item.slick-slide").click(function () {
-            $(".slider-nav .item.slick-slide").css("border", "none");
-            $(this).css("border", "1px solid #000");
 
-        });
     });
 </script>
 </body>
