@@ -849,7 +849,16 @@ footer {
 
   .item_description, .other_hair_kits, .advantage_statistics, .video_part, .three_steps, .our_promise {
     max-width: 770px; } }
-@media(max-width: 768px) {
+@media(max-width: 780px) {
+  .information_blue_kit ul li, .information_pro_kit ul li {
+    font-size: 0.9em; }
+
+  .information_blue_kit, .information_pro_kit {
+    max-width: 216px; }
+
+  .second_hair_kits {
+    margin-top: 0; } }
+@media(max-width: 767px) {
   .container-fluid {
     padding: 0 5%; }
 
@@ -1109,9 +1118,9 @@ footer {
     width: 95%; }
 
   .footer .text_about_product .additional_text {
-    margin-left: 2px; } 
-  .footer_btn{
-    font-size: 1em}
-}
+    margin-left: 2px; }
+
+  .footer_btn {
+    font-size: 1em; } }
 
 /*# sourceMappingURL=style.css.map */
