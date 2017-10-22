@@ -807,7 +807,8 @@ footer {
     display: block !important; } }
 @media (max-height: 700px) {
   .modal-dialog {
-    display: block; } }
+    display: block;
+    margin-top: 30px; } }
 @media(max-width: 1200px) {
   .call_order {
     display: none; } }
