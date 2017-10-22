@@ -857,6 +857,9 @@ footer {
 @media(max-width: 767px) {
   .container-fluid {
     padding: 0 5%; }
+  .header:before{
+    width: 94%;
+    right: auto;}
 
   .header {
     -webkit-justify-content: flex-end;
