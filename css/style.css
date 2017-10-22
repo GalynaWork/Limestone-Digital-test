@@ -663,6 +663,10 @@ nav {
     right: 0;
     background: #eee;
     margin: auto; }
+.right_video iframe, .left_video iframe {
+  width: 100%;
+  height: 214px;
+  border: 0; }
 
 /*end video part */
 /*three steps */
