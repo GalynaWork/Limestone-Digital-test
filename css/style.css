@@ -302,7 +302,12 @@ nav {
 #slider_zoom i {
     border: 2px solid #90949c;
     border-radius: 33px;
-    padding: 3px 4px; }
+    line-height: 19px;
+    text-align: center;
+    width: 25px;
+    height: 21px;
+    padding-left: 3px;
+    padding-right: 3px;}
 
 .gallery .previews, .gallery .full, .gallery .desc {
   margin-right: 10px; }
